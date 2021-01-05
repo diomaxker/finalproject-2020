@@ -21,6 +21,7 @@ use App\Http\Controllers\MainController;
 route::get('/',[MainController::class, "index"]);
 route::get('/insert/', [MainController::class, "insert"]);
 route::get('/mylogout/', [MainController::class, "logout"]);
+route::get('/remove/{id}/',[MainController::class, 'remove']);
 
 /*Route::get('/', function () {
 

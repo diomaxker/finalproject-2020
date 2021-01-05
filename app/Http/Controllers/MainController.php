@@ -28,4 +28,9 @@ class MainController extends Controller
         Auth::logout();
         return redirect("/");
     }
+
+    public function remove($id) {
+        Headlines::where("id", $id)->delete();
+        return redirect("/");
+    }
 }
