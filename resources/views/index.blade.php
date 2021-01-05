@@ -63,7 +63,7 @@
         </nav>
 
     @auth <!--登入的人才有權限 -->
-    <form method='POST' action="/insert/">
+    <form method='get' action="/insert/">
         @csrf
     最新消息: <input type=text size=40 name=title>
     <input type=submit value="新增">
