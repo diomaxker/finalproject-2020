@@ -71,7 +71,10 @@
     @endauth
     <table class="table table-striped"> <!--讓表格比較漂亮-->
     <tr>
-            <th>編號</th><th>馬路消息</th><th>張貼時間</th><th>DEL</th>
+            <th>編號</th><th>馬路消息</th><th>張貼時間</th>
+            @auth
+                <th>DEL</th>
+            @endauth
     </tr>
     @foreach ($titles as $item)
         <tr>
