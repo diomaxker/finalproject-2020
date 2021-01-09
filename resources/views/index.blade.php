@@ -78,7 +78,9 @@
             <td>{{ $item -> id }}</td>
             <td>{{ $item -> title }}</td>
             <td>{{ $item -> created_at }}</td>
+            @auth
             <td><a href="/remove/{{ $item->id }}/">刪除</a></td>
+            @endauth
         </tr>
     @endforeach
     </table>
